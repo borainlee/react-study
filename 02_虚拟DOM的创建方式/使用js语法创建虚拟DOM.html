@@ -12,9 +12,8 @@
   </head>
   <body>
     <div id="test"></div>
-
     <script type="text/javascript">
-      const VDOM = React.createElement("li");
+      const VDOM = React.createElement("h1", { id: "atguigu" }, "hello,react");
       ReactDOM.render(VDOM, document.getElementById("test"));
     </script>
   </body>

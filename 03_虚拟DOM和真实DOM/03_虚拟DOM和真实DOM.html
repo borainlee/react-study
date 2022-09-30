@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>02_虚拟DOM的创建方式</title>
+    <title>js方法</title>
     <script type="text/javascript" src="../js/react.development.js"></script>
     <script
       type="text/javascript"
       src="../js/react-dom.development.js"
     ></script>
-
     <script type="text/javascript" src="../js/babel.min.js"></script>
   </head>
   <body>
     <div id="test"></div>
     <script type="text/babel">
-      let VDOM = <h1>Hello,React</h1>;
+      const VDOM = <h1>Hello,react</h1>;
       ReactDOM.render(VDOM, document.getElementById("test"));
+      console.log(typeof VDOM);
+      console.log(VDOM instanceof Object);
+      const TDOM = document.getElementById("test");
+      debugger
+      console.log(TDOM);
     </script>
   </body>
 </html>
